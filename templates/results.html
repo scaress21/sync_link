@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sync Link Results</title>
+	<link rel="icon" type="image/png" href="static/sync_link.png"/>
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+	<style>
+	body {
+		font-family: 'lato', sans-serif;
+	}
+	.content {
+  max-width: 900px;
+  margin: auto;
+	height: 900px;
+}
+	.center {
+		margin: auto;
+		width: 50%;
+		padding: 10px;
+	}
+
+	.im_center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.im_center2 {
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+}
+img {
+  width: 20%;
+  height: auto;
+}
+table {
+ border-collapse: collapse;
+
+ border:5px;
+}
+
+th {
+ width: 200px;
+ text-align: center;
+ background-color: #e3ebfd;
+
+}
+
+td {
+ width: 100px;
+ padding: 7px;
+ text-align: center;
+}
+
+tr:hover {background-color: #f5f5f5;}
+
+</style>
+</head>
+<body>
+	<div class ='content'>
+		<header class="center">
+			<img class = 'im_center2' src="{{url_for('static', filename='sync_link2.png')}}" alt="Sync Link Smaller">
+			<h1>"{{title_display}}" - {{artist_display}}</h1>
+ 		</header>
+ 		<div id = "center" class="container" style="display: flex; height: 100px;">
+ 			<div style="width: 50%;">
+	 			<img src={{artwork}} alt='Album Artwork' class="im_center">
+				<br>
+				<h4 class="center">"{{title_display}}" Lyrics</h4>
+					<div style="overflow-y:scroll; height:750px;">{{lyrics | safe}}</div>
+ 					</div>
+					<div style="flex-grow: 1; background: white;">
+						<div style:"overflow-x:auto;">
+							{{master | safe}}
+						</div>
+						<br>
+						<div style:"overflow-x:auto;">
+							{{pub | safe}}
+						</div>
+						<h4>Sync Score: {{score}}</h4>
+						<div>{{embed | safe}}</div>
+						<h4>Powered by <a href='https://www.deezer.com/us/' target = '_blank'>Deezer</a>, <a href='https://genius.com/' target = '_blank'>Genius</a>, <a href='https://www.lyricsfreak.com/' target = '_blank'>Lyric Freak</a> & <a href='https://www.spotify.com/us/' target = '_blank'>Spotify</a></h4>
+						</div>
+					</div>
+				</div>
+</body>
+</html>
