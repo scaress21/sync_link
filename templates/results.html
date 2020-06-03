@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Sync Link Results</title>
+	<title>Sync Link | Results</title>
 	<link rel="icon" type="image/png" href="static/sync_link.png"/>
 	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<style>
@@ -12,10 +12,11 @@
   max-width: 900px;
   margin: auto;
 	height: 900px;
+	text-align: center;
 }
 	.center {
 		margin: auto;
-		width: 50%;
+		width: 70%;
 		padding: 10px;
 	}
 
@@ -65,12 +66,13 @@ tr:hover {background-color: #f5f5f5;}
 			<h1>"{{title_display}}" - {{artist_display}}</h1>
  		</header>
  		<div id = "center" class="container" style="display: flex; height: 100px;">
- 			<div style="width: 50%;">
+ 			<div style="float: left; width: 50%; margin-right: 40px;">
 	 			<img src={{artwork}} alt='Album Artwork' class="im_center">
 				<br>
 				<h4 class="center">"{{title_display}}" Lyrics</h4>
-					<div style="overflow-y:scroll; height:750px;">{{lyrics | safe}}</div>
- 					</div>
+					<div style="overflow-y:scroll; height:810px;">{{lyrics | safe}}</div>
+
+					</div>
 					<div style="flex-grow: 1; background: white;">
 						<div style:"overflow-x:auto;">
 							{{master | safe}}
@@ -81,9 +83,13 @@ tr:hover {background-color: #f5f5f5;}
 						</div>
 						<h4>Sync Score: {{score}}</h4>
 						<div>{{embed | safe}}</div>
-						<h4>Powered by <a href='https://www.deezer.com/us/' target = '_blank'>Deezer</a>, <a href='https://genius.com/' target = '_blank'>Genius</a>, <a href='https://www.lyricsfreak.com/' target = '_blank'>Lyric Freak</a> & <a href='https://www.spotify.com/us/' target = '_blank'>Spotify</a></h4>
+							<h4>Powered by <a href='https://www.deezer.com/us/' target = '_blank'>Deezer</a>, <a href='https://genius.com/' target = '_blank'>Genius</a>, <a href='https://www.lyricsfreak.com/' target = '_blank'>Lyric Freak</a>, <a href='https://musicbrainz.org/' target = '_blank'>Music Brainz</a> & <a href='https://www.spotify.com/us/' target = '_blank'>Spotify</a></h4>
+						<h4>Sync Score trained on data from the above and <a href='https://www.what-song.com' target = '_blank'>What-Song</a>.</h4>
 						</div>
 					</div>
 				</div>
+				<footer>
+
+				</footer>
 </body>
 </html>
