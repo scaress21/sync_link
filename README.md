@@ -1,3 +1,5 @@
 # Sync Link
 
-The purpose of this project it to create an app that searches for music rights information (i.e. writers, publishers, labels) from multiple sources and brings them together to create the "full picture" for that song. Utilizing the Musixmatch, Spotify, and Genius APIs, when a user searches for a song the results from each of these websites will be displayed. Additionally, I will scrape the What Song website which specifically looks at songs placed in Film/TV to predict the "clearability".  
+When researching music rights online, there are often lots of discrepancies. In my experience, one of the best ways to combat this is to check as many sources as possible. However,  this can be very time consuming (and frustrating). For this project, I wanted to create a better way to search. 
+
+“Sync Link” aims to link multiple sources together to create a dashboard of master/publishing info and more! It utilizes APIs from Spotify, Genius, Deezer, and MusicBrainz in conjunction with web scraping additional sites to return two master sources, two publishing sources, lyrics, artwork, and embedded audio in one click. It also uses machine learning to predict the “clearability” of a song based on a dozen key features. 
