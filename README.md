@@ -29,7 +29,7 @@ There were lots of interesting categorial and numerical feature to explore. Anal
 I tried a variety of classification models including Logistic Regression, Naive Bayes, AdaBoost, Extra Trees, and Random Forests. After modeling with different combinations of features, Random Forests performed the best overall with 70% test accuracy in the final model. This means it accurately classified songs as "synced" or "not synced" 70% of the time.
 
 ### Application - Sync Link
-My main goal of this project was to turn it into a usable product. I believe lots of music professionals could benefit from service that gather multiple resources into one easily accessed place. This application essentially goes through all the steps of my project for an individual song and returns the information and prediction. The screenshot below shows how each source is used. 
+My main goal of this project was to turn it into a usable product. I believe lots of music professionals could benefit from service that gathers multiple resources into one easily accessed place. This application essentially goes through all the steps of my project for an individual song and returns the information and prediction. The screenshot below shows how each source is used. 
 
 ### Next Steps
 I would love to continue exploring this topic and improving my model/application. I think the biggest hurdle is by getting a larger and more accurate dataset to train the model on. There are lots of syncs that are not documented online so right now the model is limited to learning uses that have caught enough attention to be recorded by the public. 
