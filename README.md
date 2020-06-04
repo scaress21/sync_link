@@ -7,7 +7,7 @@ There are often lots of discrepancies when researching music rights online. In m
 ##### Overview: [1A. What-Song (Scrape)]() | [1B. Building the Dataset]() | [1C. Deezer (Master)]() | [1D. LyricsFreak (Publishing)]() | [1E. Spotify Pt. 1]() | [1F. Spotify Pt 2.]() | [2. Cleaning]() | [3. EDA]()  | [4. Modeling]()  | [5. Application]()
 
 ### Problem Statement
-Researching song ownership can be very time consuming but is a neccessary step to find out if a song is licensable. How can we speed up this process and make a prediction if the song has been used before (and is clearable)?
+Researching song ownership can be very time consuming but is a neccessary step to find out if a song is licensable. How can we speed up the process of finding and analyzing song ownership?
 
 
 ### Data Overview 
