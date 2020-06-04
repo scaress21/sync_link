@@ -23,7 +23,11 @@ Gathering data was the most time intensive part of this project. This is because
 
 
 ### Exploratory Data Analysis
-There were lots of interesting categorial and numerical feature to explore. Analysing the relationship between the classes and Spotify audio features, genres, and number of writers and publishers yielded the most interesting results.
+There were lots of interesting categorial and numerical features to explore. For example, comparing the distribution of genres between the "synced" and "not synced" classes showed that Rock is very popular for uses while Country is not as much. 
+![Genres by Class](./plots/genres.png)
+
+We can also see how the classes vary in tempo. The both have a peak around 130 bpm but the "not synced" category has a second peak closer to 60bpm. The tempo of a song can have a huge impact on how it interacts with the picture so this was interesting to see!
+![Tempo by Class](./plots/tempo.png)
 
 ### Modeling
 I tried a variety of classification models including Logistic Regression, Naive Bayes, AdaBoost, Extra Trees, and Random Forests. After modeling with different combinations of features, Random Forests performed the best overall with 70% test accuracy in the final model. This means it accurately classified songs as "synced" or "not synced" 70% of the time.
