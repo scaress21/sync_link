@@ -38,6 +38,7 @@ I tried a variety of classification models including Logistic Regression, Naive 
 My main goal of this project was to turn it into a usable product. I believe lots of music professionals could benefit from a service that gathers multiple resources into one easily accessed place. This application essentially goes through all the steps of my project for an individual song and returns the information and prediction. The screenshot below shows how each source is used. 
 ![Sync Link Sources](./static/sync_link_sources.png)
 
+## App Demo
 Below is a short demo of the app:
 ![Sync Link Demo](./static/sync_link_1.gif)
 
