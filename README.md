@@ -15,14 +15,13 @@ Gathering data was the most time intensive part of this project. This is because
 1. Scrape data from What-Song.com.
     - This the basis for the categories. If a song is in here, it's in the "synced" category. If it's not, it's classified as "not synced".
 2. Gather songs, both "synced" and "unsynced" 
-    - Since "synced" songs should only make up about half of the dataset, I wanted to incorporate a larger set of songs. I used a karaoke catalog for a wide variety of songs in both categories.
+    - Since "synced" songs should only make up about half of the dataset, I needed to incorporate a larger set of songs that would also have some "unsynced". I used a karaoke catalog to build this up.
 3. Gather master info from Deezer
-    - Master info gathered included bpm, album, and artist
+    - Master info gathered included bpm, album, and artist.
 4. Gather publishing info from LyricsFreak
-    - This includes writers and publishers
+    - Publishing info gathered included writers and publishers.
 5. Gather audio features from Spotify
     - These are features Spotify generates off the audio such as "Danceability", "Liveness", etc.
-
 
 ### Exploratory Data Analysis
 There were lots of interesting categorial and numerical features to explore. For example, comparing the distribution of genres between the "synced" and "not synced" classes showed that Rock is very popular for uses while Country is not as much. 
@@ -43,8 +42,8 @@ Below is a short demo of the app:
 ![Sync Link Demo](./static/sync_link_1.gif)
 
 ### Next Steps
-I would love to continue exploring this topic and improving my model/application. I think the biggest hurdle is by getting a larger and more accurate dataset to train the model on. There are lots of syncs that are not documented online so right now the model is limited to learning uses that have caught enough attention to be recorded by the public. 
+I would love to continue exploring this topic and improving my model/application. I think the biggest hurdle is obtaining a larger and more accurate dataset to train the model on. There are lots of synced songs that are not documented online so right now the model is limited to learning uses that have caught enough attention to be recorded by the public. 
 
-Also, there's a lot of nuance in determining whether or not a song is clearable, only some of this information is openly available and included here. I would love to do more reserach to see what other avenues are available to capture more levels of detail. 
+Also, there's a lot of nuance in determining whether or not a song is licensable, only some of this information is openly available and included here. I would love to do more reserach to see what other avenues are available to capture more levels of detail. 
 
 Thanks for taking the time to read about my project!
